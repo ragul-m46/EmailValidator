@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ADB52DE1286AC06B005BB91C /* EmailValidator.docc in Sources */ = {isa = PBXBuildFile; fileRef = ADB52DE0286AC06B005BB91C /* EmailValidator.docc */; };
-		ADB52DE7286AC06B005BB91C /* EmailValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB52DDC286AC06A005BB91C /* EmailValidator.framework */; };
-		ADB52DEC286AC06B005BB91C /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB52DEB286AC06B005BB91C /* EmailValidatorTests.swift */; };
-		ADB52DED286AC06B005BB91C /* EmailValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = ADB52DDF286AC06A005BB91C /* EmailValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADB52DE1286AC06B005BB91C /* EmailValidatorRagul.docc in Sources */ = {isa = PBXBuildFile; fileRef = ADB52DE0286AC06B005BB91C /* EmailValidatorRagul.docc */; };
+		ADB52DE7286AC06B005BB91C /* EmailValidatorRagul.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB52DDC286AC06A005BB91C /* EmailValidatorRagul.framework */; };
+		ADB52DEC286AC06B005BB91C /* EmailValidatorRagulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB52DEB286AC06B005BB91C /* EmailValidatorRagulTests.swift */; };
+		ADB52DED286AC06B005BB91C /* EmailValidatorRagul.h in Headers */ = {isa = PBXBuildFile; fileRef = ADB52DDF286AC06A005BB91C /* EmailValidatorRagul.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADB52DF7286AC098005BB91C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB52DF6286AC098005BB91C /* Validator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +25,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		ADB52DDC286AC06A005BB91C /* EmailValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmailValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADB52DDF286AC06A005BB91C /* EmailValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailValidator.h; sourceTree = "<group>"; };
-		ADB52DE0286AC06B005BB91C /* EmailValidator.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EmailValidator.docc; sourceTree = "<group>"; };
-		ADB52DE6286AC06B005BB91C /* EmailValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmailValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADB52DEB286AC06B005BB91C /* EmailValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorTests.swift; sourceTree = "<group>"; };
+		ADB52DDC286AC06A005BB91C /* EmailValidatorRagul.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmailValidatorRagul.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB52DDF286AC06A005BB91C /* EmailValidatorRagul.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailValidatorRagul.h; sourceTree = "<group>"; };
+		ADB52DE0286AC06B005BB91C /* EmailValidatorRagul.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EmailValidatorRagul.docc; sourceTree = "<group>"; };
+		ADB52DE6286AC06B005BB91C /* EmailValidatorRagulTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmailValidatorRagulTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB52DEB286AC06B005BB91C /* EmailValidatorRagulTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorRagulTests.swift; sourceTree = "<group>"; };
+		ADB52DF6286AC098005BB91C /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		ADB52E1D286AD061005BB91C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADB52DE7286AC06B005BB91C /* EmailValidator.framework in Frameworks */,
+				ADB52DE7286AC06B005BB91C /* EmailValidatorRagul.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,36 +56,46 @@
 		ADB52DD2286AC06A005BB91C = {
 			isa = PBXGroup;
 			children = (
-				ADB52DDE286AC06A005BB91C /* EmailValidator */,
-				ADB52DEA286AC06B005BB91C /* EmailValidatorTests */,
+				ADB52DDE286AC06A005BB91C /* EmailValidatorRagul */,
+				ADB52DEA286AC06B005BB91C /* EmailValidatorRagulTests */,
 				ADB52DDD286AC06A005BB91C /* Products */,
+				ADB52E1C286AD061005BB91C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		ADB52DDD286AC06A005BB91C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADB52DDC286AC06A005BB91C /* EmailValidator.framework */,
-				ADB52DE6286AC06B005BB91C /* EmailValidatorTests.xctest */,
+				ADB52DDC286AC06A005BB91C /* EmailValidatorRagul.framework */,
+				ADB52DE6286AC06B005BB91C /* EmailValidatorRagulTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ADB52DDE286AC06A005BB91C /* EmailValidator */ = {
+		ADB52DDE286AC06A005BB91C /* EmailValidatorRagul */ = {
 			isa = PBXGroup;
 			children = (
-				ADB52DDF286AC06A005BB91C /* EmailValidator.h */,
-				ADB52DE0286AC06B005BB91C /* EmailValidator.docc */,
+				ADB52DDF286AC06A005BB91C /* EmailValidatorRagul.h */,
+				ADB52DE0286AC06B005BB91C /* EmailValidatorRagul.docc */,
+				ADB52DF6286AC098005BB91C /* Validator.swift */,
 			);
-			path = EmailValidator;
+			path = EmailValidatorRagul;
 			sourceTree = "<group>";
 		};
-		ADB52DEA286AC06B005BB91C /* EmailValidatorTests */ = {
+		ADB52DEA286AC06B005BB91C /* EmailValidatorRagulTests */ = {
 			isa = PBXGroup;
 			children = (
-				ADB52DEB286AC06B005BB91C /* EmailValidatorTests.swift */,
+				ADB52DEB286AC06B005BB91C /* EmailValidatorRagulTests.swift */,
 			);
-			path = EmailValidatorTests;
+			path = EmailValidatorRagulTests;
+			sourceTree = "<group>";
+		};
+		ADB52E1C286AD061005BB91C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADB52E1D286AD061005BB91C /* Accelerate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,16 +105,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADB52DED286AC06B005BB91C /* EmailValidator.h in Headers */,
+				ADB52DED286AC06B005BB91C /* EmailValidatorRagul.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		ADB52DDB286AC06A005BB91C /* EmailValidator */ = {
+		ADB52DDB286AC06A005BB91C /* EmailValidatorRagul */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADB52DF0286AC06B005BB91C /* Build configuration list for PBXNativeTarget "EmailValidator" */;
+			buildConfigurationList = ADB52DF0286AC06B005BB91C /* Build configuration list for PBXNativeTarget "EmailValidatorRagul" */;
 			buildPhases = (
 				ADB52DD7286AC06A005BB91C /* Headers */,
 				ADB52DD8286AC06A005BB91C /* Sources */,
@@ -112,14 +125,14 @@
 			);
 			dependencies = (
 			);
-			name = EmailValidator;
+			name = EmailValidatorRagul;
 			productName = EmailValidator;
-			productReference = ADB52DDC286AC06A005BB91C /* EmailValidator.framework */;
+			productReference = ADB52DDC286AC06A005BB91C /* EmailValidatorRagul.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ADB52DE5286AC06B005BB91C /* EmailValidatorTests */ = {
+		ADB52DE5286AC06B005BB91C /* EmailValidatorRagulTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADB52DF3286AC06B005BB91C /* Build configuration list for PBXNativeTarget "EmailValidatorTests" */;
+			buildConfigurationList = ADB52DF3286AC06B005BB91C /* Build configuration list for PBXNativeTarget "EmailValidatorRagulTests" */;
 			buildPhases = (
 				ADB52DE2286AC06B005BB91C /* Sources */,
 				ADB52DE3286AC06B005BB91C /* Frameworks */,
@@ -130,9 +143,9 @@
 			dependencies = (
 				ADB52DE9286AC06B005BB91C /* PBXTargetDependency */,
 			);
-			name = EmailValidatorTests;
+			name = EmailValidatorRagulTests;
 			productName = EmailValidatorTests;
-			productReference = ADB52DE6286AC06B005BB91C /* EmailValidatorTests.xctest */;
+			productReference = ADB52DE6286AC06B005BB91C /* EmailValidatorRagulTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +166,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ADB52DD6286AC06A005BB91C /* Build configuration list for PBXProject "EmailValidator" */;
+			buildConfigurationList = ADB52DD6286AC06A005BB91C /* Build configuration list for PBXProject "EmailValidatorRagul" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -166,8 +179,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADB52DDB286AC06A005BB91C /* EmailValidator */,
-				ADB52DE5286AC06B005BB91C /* EmailValidatorTests */,
+				ADB52DDB286AC06A005BB91C /* EmailValidatorRagul */,
+				ADB52DE5286AC06B005BB91C /* EmailValidatorRagulTests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,7 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADB52DE1286AC06B005BB91C /* EmailValidator.docc in Sources */,
+				ADB52DF7286AC098005BB91C /* Validator.swift in Sources */,
+				ADB52DE1286AC06B005BB91C /* EmailValidatorRagul.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADB52DEC286AC06B005BB91C /* EmailValidatorTests.swift in Sources */,
+				ADB52DEC286AC06B005BB91C /* EmailValidatorRagulTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +225,7 @@
 /* Begin PBXTargetDependency section */
 		ADB52DE9286AC06B005BB91C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ADB52DDB286AC06A005BB91C /* EmailValidator */;
+			target = ADB52DDB286AC06A005BB91C /* EmailValidatorRagul */;
 			targetProxy = ADB52DE8286AC06B005BB91C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -394,6 +408,7 @@
 		ADB52DF4286AC06B005BB91C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -409,6 +424,7 @@
 		ADB52DF5286AC06B005BB91C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,7 +440,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ADB52DD6286AC06A005BB91C /* Build configuration list for PBXProject "EmailValidator" */ = {
+		ADB52DD6286AC06A005BB91C /* Build configuration list for PBXProject "EmailValidatorRagul" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADB52DEE286AC06B005BB91C /* Debug */,
@@ -433,7 +449,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADB52DF0286AC06B005BB91C /* Build configuration list for PBXNativeTarget "EmailValidator" */ = {
+		ADB52DF0286AC06B005BB91C /* Build configuration list for PBXNativeTarget "EmailValidatorRagul" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADB52DF1286AC06B005BB91C /* Debug */,
@@ -442,7 +458,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADB52DF3286AC06B005BB91C /* Build configuration list for PBXNativeTarget "EmailValidatorTests" */ = {
+		ADB52DF3286AC06B005BB91C /* Build configuration list for PBXNativeTarget "EmailValidatorRagulTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADB52DF4286AC06B005BB91C /* Debug */,
