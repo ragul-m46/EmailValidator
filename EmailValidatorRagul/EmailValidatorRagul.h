@@ -1,6 +1,6 @@
 //
-//  EmailValidator.h
-//  EmailValidator
+//  EmailValidatorRagul.h
+//  EmailValidatorRagul
 //
 //  Created by Mac-OBS-18 on 28/06/22.
 //
